@@ -2,6 +2,16 @@ import { useState } from "react";
 import SectionTitle from "./../../components/ui/SectionTitle/SectionTitle";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLanguage,
+  FaLinkedin,
+  FaLocationArrow,
+  FaPhone,
+  FaTwitter,
+} from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -35,27 +45,87 @@ const Contact = () => {
       .catch((err) => console.error("Error sending email:", err));
   };
   return (
-    <div className="md:px-20 px-0">
+    <div className="md:px-20 px-0 pt-10">
       <SectionTitle firstWord="Contact" lastWord="Me" />
-      <div className="flex flex-col md:flex-row items-center">
+      <div className="flex flex-col md:flex-row items-center gap-10">
         <div className="flex-1">
           <h2 className="text-3xl font-bold text-white">Contact me here</h2>
-          <div>
-            <div>
+          <div className="py-10">
+            <div className="space-y-2">
               <div className="flex justify-between items-center">
-                <p>Location</p> <p>: Moulvibazar, Sylhet, BD</p>
+                <p className="flex items-center gap-2">
+                  <FaLocationArrow /> Location
+                </p>{" "}
+                <p>: Moulvibazar, Sylhet, BD</p>
               </div>
               <div className="flex justify-between items-center">
-                <p>Email</p> <p>: brcshakil72@gmail.com</p>
+                <p className="flex items-center gap-2">
+                  <MdEmail /> Email
+                </p>{" "}
+                <p>: brcshakil72@gmail.com</p>
               </div>
               <div className="flex justify-between items-center">
-                <p>Mobile</p> <p>: +8801634264626</p>
+                <p className="flex items-center gap-2">
+                  <FaPhone /> Mobile
+                </p>{" "}
+                <p>: +8801634264626</p>
               </div>
               <div className="flex justify-between items-center">
-                <p>Languages</p> <p>: Bangla, English</p>
+                <p className="flex items-center gap-2">
+                  <FaLanguage /> Languages
+                </p>{" "}
+                <p>: Bangla, English</p>
               </div>
             </div>
           </div>
+          {/* Social links */}
+
+          <div className="flex items-center gap-3">
+            <a
+              href="https://www.instagram.com/brcshakil/"
+              className="text-center  rounded-full "
+              rel="noreferrer"
+              target="_blank"
+            >
+              <button className="rounded-full bg-slate-600  py-2 px-2">
+                <FaInstagram className="text-white text-xl" />{" "}
+              </button>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/brcshakil/"
+              rel="noreferrer"
+              target="_blank"
+              className="text-center  rounded-full "
+            >
+              <button className="rounded-full bg-slate-600  py-2 px-2">
+                <FaLinkedin className="text-white text-xl" />{" "}
+              </button>
+            </a>
+            <a
+              href="https://twitter.com/brcshakil"
+              className="text-center rounded-full "
+              rel="noreferrer"
+              target="_blank"
+            >
+              {" "}
+              <button className="rounded-full bg-slate-600  py-2 px-2">
+                <FaTwitter className="text-white text-xl" />{" "}
+              </button>
+            </a>
+            <a
+              href="https://github.com/brcshakil1"
+              className="text-center  rounded-full "
+              rel="noreferrer"
+              target="_blank"
+            >
+              <button className="rounded-full bg-slate-600  py-2 px-2">
+                <FaGithub className="text-white text-xl" />{" "}
+              </button>
+            </a>
+          </div>
+
+          <div></div>
         </div>
         <div className="flex-1">
           <form onSubmit={handleSubmit} className="card-body">

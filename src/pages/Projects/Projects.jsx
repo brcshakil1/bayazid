@@ -24,7 +24,7 @@ const Projects = () => {
         Here is some of my work that I{`'`}ve done in various programming
         languages.{" "}
       </p>
-      <div className="lg:px-52 md:px-20 grid grid-cols-1 place-items-center md:grid-cols-2 gap-5">
+      <div className="lg:px-52 md:px-20 grid grid-cols-1 place-items-center md:grid-cols-2 gap-5 pt-7">
         {projects?.map((project, idx) => (
           <Project key={idx} project={project} idx={idx} />
         ))}
