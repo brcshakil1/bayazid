@@ -20,7 +20,7 @@ const Banner = () => {
               className="text-xl md:text-3xl font-medium"
               sequence={[
                 // Same substring at the start will only be typed once, initially
-                "Professional MERN Stack Developer since 2022",
+                "Professional MERN Stack Developer",
               ]}
               speed={50}
             />
