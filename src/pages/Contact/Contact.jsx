@@ -25,7 +25,6 @@ const Contact = () => {
     const serviceId = "service_kc46yhk";
     const templateId = "template_ciqd3ji";
     const publicKey = "FiB_IkbuhKKe4K17T";
-    setName(""), setEmail(""), setMessage("");
     // create a new object contains dynamic template params
     const templateParams = {
       from_name: name,
@@ -45,7 +44,7 @@ const Contact = () => {
       .catch((err) => console.error("Error sending email:", err));
   };
   return (
-    <div className="md:px-20 px-0 pt-10">
+    <div className="md:px-20 px-0 pt-10 pb-32 md:pb-10">
       <SectionTitle firstWord="Contact" lastWord="Me" />
       <div className="flex flex-col md:flex-row items-center gap-10">
         <div className="flex-1">
