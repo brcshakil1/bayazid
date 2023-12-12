@@ -1,27 +1,16 @@
+import { useEffect, useState } from "react";
 import SectionTitle from "./../../components/ui/SectionTitle/SectionTitle";
 import Project from "./Project";
-import Loading from "./../../components/shared/Loading/Loading";
+import Loading from "../../components/shared/Loading/Loading";
 
 const Projects = () => {
-  const projects = [
-    {
-      image: "https://i.ibb.co/c1Q8tmx/card-1.jpg",
-      livePreview: "https://burj-al-arif-6511c.web.app",
-    },
-    {
-      image: "https://i.ibb.co/PFdbDpq/card-2.jpg",
-      livePreview: "https://lets-study-435f5.web.app/",
-    },
-    {
-      image: "https://i.ibb.co/gS3TrYJ/card-3.jpg",
-      livePreview: "https://drive-wave-client.web.app",
-    },
-    {
-      image:
-        "https://i.ibb.co/sJMFRQ2/alex-padurariu-t-XYg4-Zx7k-SU-unsplash.jpg",
-      livePreview: "https://eduevent-39570.web.app/",
-    },
-  ];
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch("./allProjects.json")
+      .then((res) => res.json())
+      .then((data) => setProjects(data));
+  }, []);
 
   return (
     <div className="pt-10 pb-32 md:pb-10">
@@ -31,7 +20,7 @@ const Projects = () => {
         languages.{" "}
       </p>
       <div className="lg:px-52 md:px-20 grid grid-cols-1 place-items-center md:grid-cols-2 gap-5 pt-7">
-        {projects?.image ? (
+        {projects ? (
           projects?.map((project, idx) => (
             <Project key={idx} project={project} idx={idx} />
           ))
