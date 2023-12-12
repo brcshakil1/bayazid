@@ -49,9 +49,14 @@ const Contact = () => {
       <SectionTitle firstWord="Contact" lastWord="Me" />
       <div className="flex flex-col md:flex-row items-center gap-10">
         <div className="flex-1">
-          <h2 className="text-3xl font-bold text-white">Contact me here</h2>
-          <div className="py-10">
-            <div className="space-y-2">
+          <h2 className="text-xl font-bold text-white">Contact me here</h2>
+          <div className="pb-10 pt-5">
+            <p className="pb-4 text-slate-400">
+              Get in touch with me! I am available for collaboration, questions,
+              or just a friendly chat. Feel free to reach out using the form
+              below. Looking forward to connecting with you!
+            </p>
+            <div className="space-y-2 text-slate-300">
               <div className="flex justify-between items-center">
                 <p className="flex items-center gap-2">
                   <FaLocationArrow /> Location
@@ -87,7 +92,7 @@ const Contact = () => {
               rel="noreferrer"
               target="_blank"
             >
-              <button className="rounded-full bg-slate-600  py-2 px-2">
+              <button className="rounded-full bg-slate-600  py-2 px-2 hover:bg-blue-400">
                 <FaInstagram className="text-white text-xl" />{" "}
               </button>
             </a>
@@ -98,7 +103,7 @@ const Contact = () => {
               target="_blank"
               className="text-center  rounded-full "
             >
-              <button className="rounded-full bg-slate-600  py-2 px-2">
+              <button className="rounded-full bg-slate-600  py-2 px-2 hover:bg-blue-400">
                 <FaLinkedin className="text-white text-xl" />{" "}
               </button>
             </a>
@@ -109,7 +114,7 @@ const Contact = () => {
               target="_blank"
             >
               {" "}
-              <button className="rounded-full bg-slate-600  py-2 px-2">
+              <button className="rounded-full bg-slate-600  py-2 px-2 hover:bg-blue-400">
                 <FaTwitter className="text-white text-xl" />{" "}
               </button>
             </a>
@@ -119,7 +124,7 @@ const Contact = () => {
               rel="noreferrer"
               target="_blank"
             >
-              <button className="rounded-full bg-slate-600  py-2 px-2">
+              <button className="rounded-full bg-slate-600  py-2 px-2 hover:bg-blue-400">
                 <FaGithub className="text-white text-xl" />{" "}
               </button>
             </a>

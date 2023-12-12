@@ -27,6 +27,7 @@ const ProjectDetails = () => {
         "https://i.ibb.co/Cvb4z9M/project-1-3.png",
         "https://i.ibb.co/Js42Fj9/project-1-4.png",
       ],
+      livePreview: "https://burj-al-arif-6511c.web.app",
     },
     {
       image: "../src/assets/project-2/card-2.jpg",
@@ -49,6 +50,7 @@ const ProjectDetails = () => {
         "https://i.ibb.co/0JnD9gZ/project-2-2.png",
         "https://i.ibb.co/nc5GFgS/project-2-3.png",
       ],
+      livePreview: "https://lets-study-435f5.web.app/",
     },
     {
       image: "../src/assets/project-3/card-3.jpg",
@@ -71,6 +73,7 @@ const ProjectDetails = () => {
         "https://i.ibb.co/3c54P1C/project-3-1.png",
         "https://i.ibb.co/qyZ4b30/project-3-2.png",
       ],
+      livePreview: "https://drive-wave-client.web.app",
     },
     {
       image: "../src/assets/project-4/card-4.jpg",
@@ -93,28 +96,35 @@ const ProjectDetails = () => {
         "https://i.ibb.co/Dz56SfH/project-4-1.png",
         "https://i.ibb.co/KD47SFX/project-4-2.png",
       ],
+      livePreview: "https://eduevent-39570.web.app/",
     },
   ];
 
   const project = projects[parseInt(idx)];
-  console.log(project);
 
-  console.log(idx);
   return (
-    <div className="border px-0 md:px-20 pt-10">
+    <div className=" px-0 md:px-20 pt-10 md:pb-10 pb-32">
       <SectionTitle firstWord="Project" lastWord="Details" />
       <div className=" ">
         <Slider sliderImg={project?.slidersImage} />
+        <a
+          href={project?.livePreview}
+          rel="noreferrer"
+          target="_blank"
+          className="bg-black text-xl font-bold py-3 text-center block rounded-lg mt-5"
+        >
+          Live Preview
+        </a>
       </div>
       <div className="py-10">
         <div key={idx}>
           <h2 className="text-2xl ">{project?.name}</h2>
-          <p>
+          <p className="text-slate-400">
             {project?.project_about} | {project?.starting_data} -{" "}
             {project?.ending_data}
           </p>
           <p className="pt-5 pb-2 text-xl">Short Description:</p>
-          <ul>
+          <ul className="text-slate-400 px-4">
             {project?.projects_description?.map((desc) => (
               <li key={desc} className="list-disc">
                 {desc}
@@ -122,7 +132,7 @@ const ProjectDetails = () => {
             ))}
           </ul>
           <p className="pt-5 pb-2 text-xl">Technologies Used:</p>
-          <ul>
+          <ul className="text-slate-400 px-4">
             {project?.technologies?.map((technology, idx) => (
               <li key={idx} className="list-disc">
                 {technology}

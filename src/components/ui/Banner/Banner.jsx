@@ -20,7 +20,7 @@ const Banner = () => {
               className="text-xl md:text-3xl font-medium"
               sequence={[
                 // Same substring at the start will only be typed once, initially
-                "Professional MERN Stack Developer",
+                "Professional MERN Stack Developer since 2022",
               ]}
               speed={50}
             />
@@ -32,7 +32,7 @@ const Banner = () => {
             sequence={[
               // Same substring at the start will only be typed once, initially
               1000,
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis dignissimos velit accusantium officiis? Tenetur doloremque tempore, voluptates, consequuntur dolor nihil sit, quos blanditiis labore dignissimos numquam aspernatur explicabo obcaecati reiciendis amet impedit earum maxime distinctio. Dolorem aliquid quas, facilis eligendi officia delectus nesciunt, saepe voluptas excepturi facere dolor possimus.",
+              "Proficient in MERN Stack, HTML, CSS, Tailwind, JavaScript, React, Node.js, Express.js, MongoDB, Git, GitHub, and Firebase. I thrive on continuous learning, adapting to emerging technologies. I craft elegant, user-centric solutions and leverage version control for seamless collaboration. Excited to contribute dynamic expertise to innovative projects, let's build something extraordinary together!",
             ]}
             speed={100}
           />

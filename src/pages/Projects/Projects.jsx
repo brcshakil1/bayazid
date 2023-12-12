@@ -5,20 +5,24 @@ const Projects = () => {
   const projects = [
     {
       image: "../src/assets/project-1/card-1.jpg",
+      livePreview: "https://burj-al-arif-6511c.web.app",
     },
     {
       image: "../src/assets/project-2/card-2.jpg",
+      livePreview: "https://lets-study-435f5.web.app/",
     },
     {
       image: "../src/assets/project-3/card-3.jpg",
+      livePreview: "https://drive-wave-client.web.app",
     },
     {
       image: "../src/assets/project-4/card-4.jpg",
+      livePreview: "https://eduevent-39570.web.app/",
     },
   ];
 
   return (
-    <div className="py-10">
+    <div className="pt-10 pb-32 md:pb-0">
       <SectionTitle firstWord="My" lastWord="Projects" />
       <p className="text-center">
         Here is some of my work that I{`'`}ve done in various programming
