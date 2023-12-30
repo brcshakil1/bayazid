@@ -16,22 +16,22 @@ const About = () => {
                 <p>
                   Welcome to my Portfolio! I am Bayazidur Rahman Chowdhury
                   Shakil, a professional web developer with a journey that
-                  kicked off in 2022. My expertise spans the MERN Stack,
+                  kicked off in 2022. My expertise spans the Front End
+                  Development with React And I am comfortable with MERN Stack,
                   encompassing HTML, CSS, Tailwind, JavaScript, React, Node.js,
                   Express.js, MongoDB, Git, GitHub, and Firebase.
                 </p>
                 <p>
                   As a perpetual learner, I thrive on staying ahead of the curve
-                  with emerging technologies. I am not just a developer, I am a
-                  creator of seamless, user-centric experiences. Proficient in
-                  collaborative development, I leverage Git for smooth teamwork.
+                  with emerging technologies. Proficient in collaborative
+                  development, I leverage Git for smooth teamwork.
                 </p>
                 <p>
-                  Feel free to download my resume and, while you are here, drop
-                  me a line! I am always eager to connect with like-minded
-                  individuals and explore exciting opportunities. Let{`'`}s
-                  embark on a journey of innovation together. Cheers to building
-                  something extraordinary!
+                  Feel free to contact me or download my resume and, while you
+                  are here, drop me a line! I am always eager to connect with
+                  like-minded individuals and explore exciting opportunities.
+                  Let{`'`}s embark on a journey of innovation together. Cheers
+                  to building something extraordinary!
                 </p>
               </div>
             </div>

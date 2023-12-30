@@ -15,10 +15,7 @@ const Projects = () => {
   return (
     <div className="pt-10 pb-32 md:pb-10">
       <SectionTitle firstWord="My" lastWord="Projects" />
-      <p className="text-center">
-        Here is some of my work that I{`'`}ve done in various programming
-        languages.{" "}
-      </p>
+      <p className="text-center">Here is some of my work that I{`'`}ve done </p>
       <div className="lg:px-52 md:px-20 grid grid-cols-1 place-items-center md:grid-cols-2 gap-5 pt-7">
         {projects ? (
           projects?.map((project, idx) => (

@@ -1,4 +1,4 @@
-import resume from "../../../assets/Bayazid-web-developer.pdf";
+import resume from "../../../assets/REACT_JS_DEVELOPER_Bayazidur_Rahman_Chowdhury.pdf";
 import { FaDownload } from "react-icons/fa6";
 
 const ResumeBtn = () => {
